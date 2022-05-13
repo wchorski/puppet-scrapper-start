@@ -13,7 +13,7 @@ artists.forEach(artist => {
 async function scrape_sc_profile(url) {
   try {
 
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.goto(url);
 
